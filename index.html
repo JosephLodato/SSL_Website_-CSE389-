@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+          padding: 0;
+          color: #333; /* Set the default text color to a dark tone */
+          background-color: #f4f4f4; /* Set a light background color for the body */
+        }
+        h1 {
+          font-size: 36px;
+          margin-bottom: 5px;
+          color: #333; /* Set header text color to a dark tone */
+        }
+        h2 {
+          font-size: 24px;
+          margin-top: 20px;
+          color: #333; /* Set section header text color to a dark tone */
+        }
+        section {
+          background-color: #fff; /* Set background color for sections */
+          padding: 20px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        li {
+          margin-bottom: 8px;
+        }
+        .date {
+          float: right;
+          font-weight: normal;
+        }
+        .contact-info {
+          margin-bottom: 10px;
+          overflow: auto; /* Clear floats in the contact info */
+        }
+        .contact-info p {
+          margin: 5px 10px 0 0; /* Adjust the margin for contact info */
+          display: inline; /* Display items inline */
+        }
+        img {
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+      </style>
+</head>
+<body>
+    <h1 style= "text-align: center;">Personal Portfolios</h1>
+    <div style="text-align: center;">
+        <a href="media/secretPortal.jpg">
+            <img src="media/CUSE.jpg" style="width: 30%;">
+        </a>
+    </div>
+    <p style= "text-align: center;">This is a basic HTML file with some text.</p>
+    <br>
+
+    <section>
+    <h3>Download Some files!</h3>
+    <p>Note: trying to download the exact same file at the exact same time will not work.</p>
+    <p>Video Zip 1: <a href="/media/MultiThreadDemoDownload.zip">Link</a></p>
+    <p>Video Zip 2: <a href="/media/MultiThreadDemoDownload2.zip">Link</a></p>
+    </section>
+
+    <section>
+    <h3><strong>Portfolios:</strong></h3>
+    <p>Ryan Brennan: <a href="/webpages/Ryan.html">Chicken Blog</a></p>
+    <p>Nathan Czarnecki: <a href="/webpages/Nathan.html">Nathan's portfolio</a></p>
+    <p>Joseph Lodato:</p>
+    <p>Kevin Leger: <a href="/webpages/Kevin.html">Kevin's Portfolio</a></p>
+    </section>
+
+    <section>
+    <h3>The server supports video and pictures:</h3>
+    <p>Mascot Otto: <a href="/media/OttoCheffing.jpg">Link</a></p>
+    <p>Hammer Video: <br>
+        <video width="30%" controls>
+            <source src="/media/BizzareWeapVid.mov" type="video/mp4">
+        </video>
+    </section>
+
+    <section>
+    <p>Below is a form for you to try using POST with:</p>
+    <form action="scripts/page_print.php" method="post">
+        <label for="input">Type the statement you'd like to print below:</label>
+        <input type="text" id="input" name="input"> 
+        <br>
+
+        <input type="submit" value="Clicketh Me">
+    </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Including a .jar file allows our program to be run with only TWO files (APP_RunServer.jar, RootDir)
+
+
+------------Execute The Below to Create .jar-----------
+
+javac *.java ; jar cfm APP_RunServer.jar ClassManifest.mf *.class ; rm *.class ; echo "Completed Update"
+
+-------------------------------------------------------
+
+The above^ works as follows
+1) Run first line to compile all files ending in .java (*.java) ;
+2) Run second line to create (c) a named jar file (f) using the manifest specified (m) to denote the main class location, and pack all files ending in .class (*.class) into an executable ;
+3) Clean up directory by removing .class files
+
+
+If you want to run the .jar from terminal (instead of double-click):
+--> java -jar APP_RunServer.jar
+
+
+At this point, as long as App_RunServer.jar and RootDir are in the same directory, they are all that is needed to run the server---and can be moved wherever. When the grader tries to run the server, this is the experience we want them to have.
+
+
+
+
+
+
