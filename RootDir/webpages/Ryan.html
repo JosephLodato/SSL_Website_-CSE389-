@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      color: #333;
+      /* Set the default text color to a dark tone */
+      background-color: #bf3131;
+      /* Set a light background color for the body */
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+      color: #333;
+      /* Set header text color to a dark tone */
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #333;
+      /* Set section header text color to a dark tone */
+    }
+
+    section {
+      background-color: skyblue;
+      /* Set background color for sections */
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* Add a subtle box shadow */
+    }
+  </style>
+
+</head>
+
+<body>
+  <p style="background-color: skyblue; border-radius: 4px;position: absolute; padding: 0px;">&nbsp;<a href="/index.html">Main Page</a>&nbsp;</p>
+  <p style="background-color: skyblue; border-radius: 4px;position: absolute; top:7%; padding: 0px;">&nbsp;<a href="#CommentsSection">Comments</a>&nbsp;</p>
+  
+  <div style="background-color:skyblue; border-radius: 8px; margin:auto;margin-bottom: 20px; width: 70%;">
+    <h1 style="text-align: center;">Charlie the Chicken Fanpage</h1>
+    <div style="text-align: center;">
+      <img src="/media/RyanMedia/chicFarm.png" style="width:80%; border-radius: 3px;">
+    </div>
+
+  </div>
+  <div style="text-align: center;">
+  </div>
+  <section>
+    <h3>Hello friends — welcome to my blog!</h3>
+    <p>Now, you may be wondering what a Chicken is doing maintaing a web server + webpage.
+      I don't know either... And, I'm not sure anybody does, come to think of it...
+    </p>
+  </section>
+
+  <div style="margin: auto; text-align: center;width: 50%;">
+    <section>
+      <h3>[11/28/23] NightRiding</h3>
+      <p>
+        There are certain truths in this world: The sky is falling, Chick-Fil-A is sponsored by the devil, and speed limits are just suggestions.
+        Tonight, I stole Evan's bike and took it out for a joy ride. Don't worry, I made sure he won't ever mind it being missing.
+      </p>
+      <img src="/media/RyanMedia/chickBikeErased.jpg" style="margin: auto; width:90%; border-radius: 3px;">
+    </section>
+  </div>
+
+  <div style="margin: auto; text-align: center;width: 50%;">
+    <section>
+      <h3>[11/29/23] New Hot Tub</h3>
+      <p>
+        I've never really liked water, but I do like being warm. Have you ever tried sitting in a pan with the stove on?
+        165/165 - would do again. <br><br>Pro Tip: Use Olive Oil for moisturizing lotion.
+      </p>
+      <img src="/media/RyanMedia/HotTub.jpg" style="margin: auto; width:90%; border-radius: 3px;">
+    </section>
+  </div>
+
+  <div style="margin: auto; text-align: center;width: 50%;">
+    <section>
+      <h3>[11/30/23] Jared is stuck</h3>
+      <p>
+        Jared came over tonight and got stuck on homework. I know how to do the problem, of course, but I 
+        don't want to give him the answer. 
+      </p>
+      <img src="/media/RyanMedia/JaredStillStuck.jpg" style="margin: auto; width:90%; border-radius: 3px;">
+    </section>
+  </div>
+
+  <div style="margin: auto; text-align: center;width: 50%;">
+    <section>
+      <h3>[12/1/23] Jared is still stuck</h3>
+      <p>
+        It's been 24 hours and Jared still has not moved on from the first problem. I'm starting to think that
+        maybe we should cook him for dinner. At least he could make himself useful that way...
+      </p>
+      <img src="/media/RyanMedia/JaredStuck.jpg" style="margin: auto; width:90%; border-radius: 3px;">
+    </section>
+  </div>
+
+  <div style="margin: auto; text-align: center;width: 50%;">
+    <section>
+      <h3>[12/2/23] My Certificate is Invalid</h3>
+      <p>
+        The server keeps throwing exceptions, and I'm tired of it. It's a simple problem really: This generation of Computers was raised too easily;
+        had they grown up and toiled on a farm like I did, they wouldn't complain so much, because they'd understand how good they really have it.
+        <br><br> Now, Hypothetically, if I were to blow up the server with Dynamite, it would complain a lot for a second, but then---never again... Choices... Choices...
+      </p>
+      <img src="/media/RyanMedia/ChickCode.jpg" style="margin: auto; width:90%; border-radius: 3px;">
+    </section>
+  </div>
+
+
+  <form action="../scripts/ryan_post.php" method="post" style="padding-bottom: 3px;">
+      <label for="input" style="color: white;" id = "CommentsSection">Leave a Comment!</label>
+      <br>
+      <input type="text" id="newComment" name="newComment" style="width: 50%;"> 
+      <input type="submit" value="Post">
+  </form>
+  
+  <iframe src="/media/RyanMedia/RyanComments.html" height="200" width="100%" title="description"></iframe>
+
+</body>
+
+</html>
